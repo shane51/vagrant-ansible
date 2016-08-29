@@ -31,4 +31,4 @@
       apt: update_cache=yes
 
     - name: install appium
-      shell: 'npm install -g appium'
+      shell: 'npm install -g appium || true'
