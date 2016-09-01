@@ -43,7 +43,7 @@
       file: path=/home/vagrant/.bashrc state=touch mode="u=rw,g=r,o=r"
 
     - name: unpacking android
-      action: unarchive copy=no src=/tmp/android.tgz dest=/opt/adt/ creates=/opt/adt//android-sdk-linux
+      action: unarchive copy=no src=/tmp/android.tgz dest=/opt/adt/ creates=/opt/adt/android-sdk-linux
 
     - name: chown android directory to user vagrant
       file: path=/opt/adt/android-sdk-linux owner=vagrant group=vagrant recurse=yes state=directory
